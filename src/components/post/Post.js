@@ -39,7 +39,7 @@ function Post({ post }) {
         <h4>{post.owner?.userName}</h4>
       </div>
       <div className="content">
-        <img src={post?.postUrl} alt="" />
+        {post?.postUrl && <img src={post?.postUrl} alt="" />}
       </div>
       <div className="footer">
         <div className="like" onClick={handlePostLiked}>

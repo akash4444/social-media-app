@@ -86,7 +86,7 @@ function Feed() {
             <Button
               color="primary"
               variant="contained"
-              disabled={!(postContent || postUrl)}
+              disabled={!postUrl}
               onClick={() => createNewPost()}
             >
               Add Post
